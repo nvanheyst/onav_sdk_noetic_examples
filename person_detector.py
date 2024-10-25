@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import supervision as sv
 import cv2
 
