@@ -12,7 +12,7 @@ from onav_sdk.onav_api import *
 
 
 DETECTION_MODEL = "coco/24" # Yolo arch running on coco trained model
-DETECTION_ENDPOINT = "http://10.29.10.28:9001" # IP for Stereolabs detection server
+DETECTION_ENDPOINT = # IP for detection server
 POI_TAG_NAME = "patrol.x"
 MAP_UUID = "c85ee84f-3af5-46d9-935c-b54c1939f159"  # Greenspace
 DOCK_UUID = "09669899-3f70-4943-981e-1df4c15175eb"  # Dock 1
