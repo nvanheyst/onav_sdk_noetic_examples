@@ -8,7 +8,7 @@ Here is an outline of the features of the program:
 - return to dock is SOC gets below threshold and restart when charged
 - check image stream on the PTZ for human detections
 - save an annotated image of detections
-- flash lights and sound alarm at deteected intruders
+- flash lights and sound alarm at detected intruders
 
 ![image (53)](https://github.com/user-attachments/assets/54160a60-9311-4bc2-8ef1-fdf4700cff1b)
 
