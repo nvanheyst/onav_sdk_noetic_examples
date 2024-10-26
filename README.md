@@ -11,6 +11,7 @@ Here is an outline of the features of the program:
 - flash lights and sound alarm at detected intruders
 
 ![image (53)](https://github.com/user-attachments/assets/54160a60-9311-4bc2-8ef1-fdf4700cff1b)
+![20240417_212424](https://github.com/user-attachments/assets/4896be0f-7c0f-4290-8f7c-ff3793763020)
 
 **Options**
 
