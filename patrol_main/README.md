@@ -1,14 +1,16 @@
 # patrol_main
 
-This is patrol example. It was mainly created to as an example and to test the onav_sdk, but could serve as a useful template and starting point for a security application with the Husky Observer.
+This is patrol example. It was mainly created to as an example and to test the onav_sdk, but could serve as a useful template and starting point for a security application with the Husky Observer. 
 
 Here is an outline of the features of the program:
--
+- cycle between specificied POIs
+- 
+
 
 **Options**
 
 Inference
-Currently the program uses a roboflow inference server setup on an Orin NX: https://inference.roboflow.com/quickstart/docker/
+Currently the program uses a Roboflow inference server setup on an Orin NX: https://inference.roboflow.com/quickstart/docker/
 Alternatives are shown in the options folder such as using roboflows cloud server or running an object detection model on the robot
 
 Pan
