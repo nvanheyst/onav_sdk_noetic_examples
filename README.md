@@ -1,6 +1,6 @@
 # patrol_robot
 
-This is patrol POC and not intended for commercial deployment. It was mainly created to as an example and to test the onav_sdk, but could serve as a useful template and starting point for a security application with the Husky Observer. 
+This is patrol POC for the Clearpath Robotics Husky Observer and not intended for commercial deployment. It was mainly created to as an example and to test the onav_sdk, but could serve as a useful template and starting point for a security application with the Husky Observer. 
 
 Here is an outline of the features of the program:
 - cycle between specificied POIs
