@@ -1,6 +1,6 @@
 # patrol_robot
 
-This is patrol POC for the Clearpath Robotics Husky Observer and not intended for commercial deployment.
+This is patrol POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a template for additional development.
 
 Here is an outline of the features of the program:
 - cycle between specificied POIs
