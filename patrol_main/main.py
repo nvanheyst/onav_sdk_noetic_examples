@@ -146,7 +146,7 @@ class ObserverIntruderNode:
             req.mime_type = "image/png"
             ONAV_LOGGER_RECORD_MEDIA_EVENT.call(req)
 
-            # Not necessary, but we could also log the intrusion as an error event (shows up in UI)
+            # Log the intrusion as an error event
             req = ONAV_LOGGER_RECORD_ERROR.RequestType()
             req.error_msg = "Person detected"
             ONAV_LOGGER_RECORD_ERROR.call(req)
