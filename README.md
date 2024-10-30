@@ -1,14 +1,14 @@
 # patrol_robot
 
-This is patrol POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a template for additional development.
+This is patrol POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a starting point for additional development.
 
 Here is an outline of the features of the program:
-- cycle between specificied POIs
-- log data and events to execution logger
-- return to dock is SOC gets below threshold and restart when charged
+- cycle between specified POIs (GPS coordinates specified as patrol points)
 - check image stream on the PTZ for human detections
 - save an annotated image of detections
 - flash lights and sound alarm at detected intruders
+- log data and events to execution logger
+- return to dock is SOC gets below threshold and restart when charged
 
 For more information on the Husky Observer: https://clearpathrobotics.com/husky-observer/
 
