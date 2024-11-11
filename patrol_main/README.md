@@ -15,6 +15,7 @@ The purpose of this program was to show how to use POIs (points of interest) wit
 For more information on the Husky Observer: https://clearpathrobotics.com/husky-observer/
 
 ![image (53)](https://github.com/user-attachments/assets/54160a60-9311-4bc2-8ef1-fdf4700cff1b)
+![image](https://github.com/user-attachments/assets/644171b3-4f55-43d4-92b6-02af74f29f26)
 ![20240417_212424](https://github.com/user-attachments/assets/4896be0f-7c0f-4290-8f7c-ff3793763020)
 
 <ins> **Options** </ins>
