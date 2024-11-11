@@ -15,9 +15,10 @@ For more information on the Husky Observer: https://clearpathrobotics.com/husky-
 ![image (53)](https://github.com/user-attachments/assets/54160a60-9311-4bc2-8ef1-fdf4700cff1b)
 ![20240417_212424](https://github.com/user-attachments/assets/4896be0f-7c0f-4290-8f7c-ff3793763020)
 
-**Options**
+<ins> **Options** </ins>
 
-Inference
+**Inference**
+
 Currently the program uses a Roboflow inference server setup on an Orin NX: https://inference.roboflow.com/quickstart/docker/
 Alternatives can be used such as using Roboflow's cloud server or running an object detection model on the robot
 
