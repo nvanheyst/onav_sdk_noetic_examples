@@ -1,4 +1,4 @@
-# patrol_robot
+# solar_inspection_demo
 
 This is an inspection POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a starting point for additional development.
 
