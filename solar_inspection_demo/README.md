@@ -9,7 +9,7 @@ The purpose of this example is to create automated missions for the purpose of u
 - adds waypoints at the beginning and end of each row
    * exludes the outer edges (program can be modified to include or just add extra rows)
    * starts from the row closest to and in the same direction as the first edge in the generator polygon
-   * calculates heading automatically (counter can be started at 3 to reverse the direction of travel)
+   * calculates heading automatically (counter can be started at counter=3 to reverse the direction of travel)
    * can be extended to add interpolated points on each row (example can be provided)
 - adds an automated PTZ camera rotation to the beginning waypoint of each row (the values of pan1 and pan2 can be interchanged to get the opposite effect
 - option to add video capture or automated image capture. image_capture_distance.py shows a basic example of automated image capture for a specified distance interval
