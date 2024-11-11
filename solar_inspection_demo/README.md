@@ -12,7 +12,7 @@ The purpose of this example is to create automated missions for the purpose of u
    * calculates heading automatically (counter can be started at counter=3 to reverse the direction of travel)
    * can be extended to add interpolated points on each row (example can be provided)
 - adds an automated PTZ camera rotation to the beginning waypoint of each row (the values of pan1 and pan2 can be interchanged to get the opposite effect
-- option to add video capture or automated image capture. image_capture_distance.py shows a basic example of automated image capture for a specified distance interval
+- option to add video capture or automated image capture. image_capture_server.py shows a basic example of automated image capture for a specified distance interval. It is setup as a custom action server for OutdoorNav. This can be set as an "on start task" and take picture during the turns or it can be programmatically started and stopped at the beginning and end of each row. 
 
 For more information on the Husky Observer: https://clearpathrobotics.com/husky-observer/
 
