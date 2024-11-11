@@ -1,6 +1,8 @@
 # patrol_robot
 
-This is patrol POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a starting point for additional development.
+This is a patrol application POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a starting point for additional development.
+
+The purpose of this program was to show how to use POIs (points of interest) within an application, show a security example and to show how to integrate computer vision model inference.
 
 <ins>Here is an outline of the features of the program: </ins>
 - cycle between specified POIs (GPS coordinates specified as patrol points)
