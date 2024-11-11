@@ -2,7 +2,7 @@
 
 This is patrol POC for the Clearpath Robotics Husky Observer. This is not intended for commercial deployment and is just an example, but could serve as a starting point for additional development.
 
-Here is an outline of the features of the program:
+<ins>Here is an outline of the features of the program: </ins>
 - cycle between specified POIs (GPS coordinates specified as patrol points)
 - check image stream on the PTZ for human detections
 - save an annotated image of detections
