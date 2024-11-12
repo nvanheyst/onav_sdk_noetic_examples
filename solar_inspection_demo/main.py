@@ -6,17 +6,14 @@ import pyproj
 import math
 
 MAP_NAME = "field_example" #name of map from row generator (saved copy)
-#MAP_NAME = "rooftop_sample"
 MISSION_NAME = f"{MAP_NAME}_mission"
 POIS = 14
 feet = lambda f : f * 0.3048 
 P = pyproj.Proj(proj='utm', zone=17, ellps='WGS84', preserve_units=True)
 #PTZ Position 1
-pan1 = -math.pi/2
-pos1 = 1.0
-#PTZ Position 1
-pan2 = math.pi/2
-pos2 = 2.0
+pan1, pos1 = -math.pi/2, 1.0
+#PTZ Position 2
+pan2, pos2 = math.pi/2, 2.0
 
 def get_map(map_name):
     ONAV_MM_GET_ALL_MAPS.RequestType()
