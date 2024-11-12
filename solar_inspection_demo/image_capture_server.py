@@ -24,8 +24,7 @@ ODOMETRY_TOPIC = "/husky_velocity_controller/odom"
 LOGGING_PREFIX = "custom_task_adaptor"
 DEFAULT_DISTANCE_THRESHOLD = 1.0
 CAPTURE_SERVER_NAME = "/capture_server"
-#SAVE_IMAGE_DIRECTORY= "/opt/onav/0.14.0/app/docker/onav_sdk/scripts/nathan/solar_app/pictures"
-SAVE_IMAGE_DIRECTORY= "/workspace/src/onav_sdk/scripts/nathan/solar_app/pictures"
+SAVE_IMAGE_DIRECTORY= "/workspace/src/onav_sdk/scripts/pictures"
 
 class CustomTaskAdaptor:
     def __init__(self):
