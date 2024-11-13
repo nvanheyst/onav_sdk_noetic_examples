@@ -11,7 +11,7 @@ I created this repo to share examples as I work on them. They aren't overly poli
 
 **Get Access to the onav_sdk**
 
-If you have OutdoorNav 0.13.0 or newer - good news! You already have access to the onav_sdk. As of 0.11.0 upgrading OutdoorNav is straightforware with the OutdoorNav CLI tool: https://docs.clearpathrobotics.com/docs_outdoornav_user_manual/getting_started/terminal_interface#upgrading-the-outdoornav-software
+If you have OutdoorNav 0.13.0 or newer - good news! You already have access to the onav_sdk. 
 
 The VS Code Server is only accessible via - http://(hostname)/_/code/
 
