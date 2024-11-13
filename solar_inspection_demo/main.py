@@ -9,9 +9,9 @@ MAP_NAME = "field_example" #name of map from row generator
 MISSION_NAME = f"{MAP_NAME}_mission" #name of new mission
 POIS = 4 #number of POIS used in the row generator polygon
 #PTZ Position 1
-pan1 = -90 #degrees
+pan1 = -89 #degrees, set at 89 instead of 90 in case a dead zone isn't set on the axis camera
 #PTZ Position 2
-pan2 = 90
+pan2 = 89
 
 feet = lambda f : f * 0.3048 
 P = pyproj.Proj(proj='utm', zone=17, ellps='WGS84', preserve_units=True)
