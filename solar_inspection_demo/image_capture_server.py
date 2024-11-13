@@ -85,15 +85,15 @@ class CustomTaskAdaptor:
             self.enable_capture_ = False
 
         result = UITaskActionResult()
-        # result.result.success = True
-        # self.custom_task_as_.set_succeeded(result)
+        result = UITaskResult()
+        result.success = True
 
     def run(self): 
         while not rospy.is_shutdown():
             if self.enable_capture_:
                 if (self.distance_travelled_ > self.distance_threshold_):
                     self.captureSnapshot()
-                    #self.captureThermalImg()
+                    self.captureThermalImg()
                     self.distance_travelled_ = 0
 
 if __name__ == "__main__":
