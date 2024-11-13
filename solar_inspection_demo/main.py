@@ -5,15 +5,16 @@ from onav_sdk.onav_api import *
 import pyproj 
 import math
 
-MAP_NAME = "field_example" #name of map from row generator (saved copy)
-MISSION_NAME = f"{MAP_NAME}_mission"
-POIS = 14
+MAP_NAME = "field_example" #name of map from row generator
+MISSION_NAME = f"{MAP_NAME}_mission" #name of new mission
+POIS = 4 #number of POIS used in the row generator polygon
+#PTZ Position 1
+pan1 = -90 #degrees
+#PTZ Position 2
+pan2 = 90
+
 feet = lambda f : f * 0.3048 
 P = pyproj.Proj(proj='utm', zone=17, ellps='WGS84', preserve_units=True)
-#PTZ Position 1
-pan1, pos1 = -math.pi/2, 1.0
-#PTZ Position 2
-pan2, pos2 = math.pi/2, 2.0
 
 def get_map(map_name):
     ONAV_MM_GET_ALL_MAPS.RequestType()
@@ -71,13 +72,12 @@ def get_polygon(m):
     except:
         return None,None
 
-def create_ptz_task(pan, position):
-    
+def create_ptz_task(pan):
     req = ONAV_MM_TASK_CREATE.RequestType()
-    req.name = "Move PTZ"
+    req.name = f"Move PTZ_{pan}"
     req.action_server_name = "/camera/move_ptz_task_adaptor"
     req.version = "0.0.0"
-    req.floats = [pan, 0.0, 1.0, position]
+    req.floats = [pan, 0.0, 1.0]
     req.strings = ["/sensors/camera_0","/sensors/camera_0/image_raw_out"]
     req.allow_failure = True
     res = ONAV_MM_TASK_CREATE.call(req)
@@ -85,13 +85,16 @@ def create_ptz_task(pan, position):
         print(f"Task created with UUID: {res.result.uuid}")
         return res.result.uuid
     return None
-    
 
 def create_mission(mission_name, waypoint_uuids):
     req = ONAV_MM_MISSION_CREATE.RequestType()
     req.name = mission_name
     req.waypoint_ids = waypoint_uuids
     req.network_replan_enabled = True
+    #use this to add an on start task such as the image capture
+    #req.on_start_ids.append()
+    #use this to add an on stop task such as stopping image or video capture
+    #req.on_stop_ids.append()
     res = ONAV_MM_MISSION_CREATE.call(req)
     if res.result:
         print(f"Mission {mission_name} created with UUID: {res.result.uuid}")
@@ -99,7 +102,6 @@ def create_mission(mission_name, waypoint_uuids):
     return None
 
 def generate_waypoints(edges, heading, uuid1, uuid2):
-    
     waypoint_uuids = []    
     counter = 1
 
@@ -140,7 +142,6 @@ def generate_waypoints(edges, heading, uuid1, uuid2):
         counter +=1
     return waypoint_uuids
 
-
 def main():
     m = get_map(MAP_NAME)
     if not m:
@@ -160,7 +161,6 @@ def main():
 
     uuid1 = create_ptz_task(pan1, pos1)
     uuid2 = create_ptz_task(pan2, pos2)
-
 
     waypoint_uuids = generate_waypoints(map_edges, heading_rad, uuid1, uuid2)
     if not waypoint_uuids:
