@@ -85,8 +85,8 @@ class CustomTaskAdaptor:
             self.enable_capture_ = False
 
         result = UITaskActionResult()
-        result = UITaskResult()
-        result.success = True
+        #result = UITaskResult()
+        result.result.success = True
 
     def run(self): 
         while not rospy.is_shutdown():
