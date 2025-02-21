@@ -18,5 +18,5 @@ For more information on the Husky Observer: https://clearpathrobotics.com/husky-
 
 
 ![20240503_133329](https://github.com/user-attachments/assets/c708d429-078d-4188-bbf5-738d2e7c2ed0)
-
-
+![image (68)](https://github.com/user-attachments/assets/b59e637b-f0bf-4acb-b7fb-fecf3c7ad4d7)
+![image (69)](https://github.com/user-attachments/assets/4e8fed6d-ca39-4be9-97f7-429905418a64)
