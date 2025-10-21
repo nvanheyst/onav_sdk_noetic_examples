@@ -6,7 +6,9 @@ OutdoorNav is a ROS based navigation stack primarily designed for deployment on 
 
 The onav_sdk is a set of light-wrappers around ROS services, actions, and topics described in the OutdoorNav ROS API. 
 
-I created this repo to share examples as I work on them. They aren't overly polished and shouldn't be considered viable for commercial deployment as is. Instead they should be considered as examples and could serve as a useful starting point for additional application development. 
+This repo is to share work in progress examples. They aren't overly polished and shouldn't be considered viable for commercial deployment as is. Instead they should be considered as examples and could serve as a useful starting point for additional application development. 
+
+**For current examples with ROS2 and the Husky A300/AMP please see the ROS2 repo: https://github.com/nvanheyst/ros2-outdoornav-api-examples**
 
 
 **Get Access to the onav_sdk**
